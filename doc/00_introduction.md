@@ -9,7 +9,7 @@ Now, the game. Ok, there is no game. Not yet. I will be developing it at the sam
 
 There is no plot, just some random hilarant ideas and a name which I like. The game will be 2D, because 3D still intimidates me, and it will be a platformer. I actually like isometric 2D games a lot more but sometimes one have to choose something and continue to the end. I will be trying to turn it some rpg like game with fast paced combat and I have actually played a little with some pixel art and I foud this simple sprites easy for almost everything.
 
-![Here must be an image, but there is none. Open some photos of internet cats and they will make the same effect.](http://i.gyazo.com/d3b9d74043cdfb1fe4bdff9b1343e6a3.png) 
+![Here must be an image, but there is none. Open some photos of internet cats and they will make the same effect.](img/concept.png) 
 
 They are simple to animate, simple to draw, simple to make content. There is only one drawback that is they are too simple and the pixels are too big so somethimes its not easy to represent some things. Like a scar for example. But that's not our problem by now and it actually exersises creativity. If you do not want to make a pixelated game you just have to change the sprites and adjust some sizes and scales.
 
