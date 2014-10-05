@@ -103,7 +103,7 @@ All the colors here maybe may look too simple and colorful. But everything else 
 
 ![](img/analogous_example.png)
 
-And I really don't know what is that. But in that thing there are only three colors and everything else is just tone and shadow. And that colors are the same (have the same hue) that the ones on the right. It blew my mind the first time I saw it.
+And I really don't know what is that. But in that thing there are only three colors and everything else is just tint and shadow. And that colors are the same (have the same hue) that the ones on the right. It blew my mind the first time I saw it.
 
 
 
