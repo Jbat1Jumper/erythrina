@@ -1,5 +1,5 @@
 # Erythrina
-##### Indie 2D Game for Godot Engine and a serie of tutorials of how I'm making it.
+##### Indie 2D Game for Godot Engine and a series of tutorials of how I'm making it.
 
 
 ## Index
