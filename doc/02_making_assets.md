@@ -5,17 +5,17 @@ Because only one part its not enough, and in the part 1 we actually didn't did a
 
 Lets strat drawing something. We will open a new 16x16 image, we will load the palette, and then we will make the body and place his eyes.
 
-![](img/2/sprite01.gif)
+![](img/2/sprite01.png)
 
 This will be the body shape for all the human-like characters and we will use its size for reference for almost anything. It's sizes are, 2px of legs, 5px for the body, and 5px for the head without any hair. And the arms, or how may be called that little dot, will be in the center of the body.
 
 Now this sprite seems just plain. Its actually plain, but it should feel just a little, more, alive.. or something. We first will add him some volume, shading him just a little. We select his skin tone, and then we select the next tone which is a little bit darker. Then we shade a line on him like if he was a box.
 
-![](img/2/sprite02.gif)
+![](img/2/sprite02.png)
 
 Whoa, now he has dimension. But there are some things missing. Like his right arm. Lets shade a little more.
 
-![](img/2/sprite03.gif)
+![](img/2/sprite03.png)
 
 Ok, its done. The bald base sprite. Now we have to animate it a little. We need an animation when he is idle, and one when he is walking facing right. Then we will make the same old trick to flip it horizontally to make the left side animations.
 
@@ -27,7 +27,11 @@ With Tab you can open the Layer/Timeline panel and then with Alt-N you will add 
 
 ![](img/2/spritegif01.gif)
 
-Its fine but more than blinking he is like trying to hypnotize something or had a blinking eye disease. The first solution is to add more frames with the eyes open but that will lead us to modify every frame each time we will need a modification. Instead of that, we can set the frame time just making double click on the frame number or pressing P. Lets give it like 1200ms for the first frame and stay with the 100ms for the frame with the eyes closed. 
+Its fine but more than blinking he is like trying to hypnotize something or had a blinking eye disease. The first solution is to add more frames with the eyes open but that will lead us to modify every frame each time we will need a modification. Instead of that, we can set the frame time just making double click on the frame number or pressing P. 
+
+![](img/2/sprite04.png)
+
+Lets give it like 1200ms for the first frame and stay with the 100ms for the frame with the eyes closed. 
 
 ![](img/2/spritegif02.gif)
 
