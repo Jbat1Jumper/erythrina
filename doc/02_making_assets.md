@@ -119,6 +119,15 @@ But lets go back to the normal Little Bald Boy. He's walking fine but his arms d
 
 The trick with the hands is, wait what.. a faun... ok. The trick with the hands is that they are alternated respect of the legs and that they move before the legs. When the leg is reaching the front, the arm is heading to go back again.
 
-And this is all for now. We clean up our image so there are no duplicated frames and save our .ase file. Now lets import him to Godot and make him move just a little.
+And this is all for now. We clean up our image so there are no duplicated frames and save our .ase file. 
+
+![](img/2/spritegif20.gif)
+
+The animation will be erratic but there is a solution if you wantto preview it nicely inside aseprite. Just select the frames you want to repeat, click on the gear icon in the timeline menu, and click Set Loop Section.
+
+
+![](img/2/sprite06.png)
+
+Now lets save everything and import him to Godot and then make him move just a little.
 
 ### Continues [here](03_our_character_in_godot.md)
