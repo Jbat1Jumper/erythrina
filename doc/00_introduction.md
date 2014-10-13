@@ -15,6 +15,6 @@ They are simple to animate, simple to draw, simple to make content. There is onl
 
 ## What's next?
 
-The next thing in my unfinishable list of tutorials is how to make the sprites and animations for this game. I will be using Graphics Gale, although I do not like it, but it's free and it works well for pixeled things.
+The next thing in my unfinishable list of tutorials is how to make the sprites and animations for this game. I will <s>be using Graphics Gale</s> be using ASEprite because its awesome, I really enjoyed using it and it can export in a way that fits well with Godot.
 
 After that I will make the environment and some tilesets using Pyxel Edit and put it all together inside the Godot Engine to give them life.

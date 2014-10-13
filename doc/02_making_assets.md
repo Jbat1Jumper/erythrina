@@ -23,7 +23,7 @@ Ok, its done. The bald base sprite. Now we have to animate it a little. We need 
 
 Lets start with the easy part, the idle animation.
 
-With Tab you can open the Layer/Timeline panel and then with Alt-N you will add a frame to the animation. We will erase his eyes in this new frame and then press Enter to play.
+With Tab you can open the Layer/Timeline panel and then with Alt-N you will add a frame to the animation. We will erase his eyes in this new frame so they will appear like he is blinking and then will press Enter to play.
 
 ![](img/2/spritegif01.gif)
 
