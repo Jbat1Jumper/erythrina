@@ -24,9 +24,11 @@ Ok, its done. The bald base sprite. Now we have to animate it a little. We need 
 Lets start with the easy part, the idle animation.
 
 With Tab you can open the Layer/Timeline panel and then with Alt-N you will add a frame to the animation. We will erase his eyes in this new frame and then press Enter to play.
+
 ![](img/2/spritegif01.gif)
 
 Its fine but more than blinking he is like trying to hypnotize something or had a blinking eye disease. The first solution is to add more frames with the eyes open but that will lead us to modify every frame each time we will need a modification. Instead of that, we can set the frame time just making double click on the frame number or pressing P. Lets give it like 1200ms for the first frame and stay with the 100ms for the frame with the eyes closed. 
+
 ![](img/2/spritegif02.gif)
 
 A long way better, but he blinks at a constant rate of ~46.15 bpm, and its kinda annoying. So I will inevitably duplicate this frames and change their duration to give him a little more humanity. I will put 2000ms for the second blink so we end with this blink animation which is a little bit better.
