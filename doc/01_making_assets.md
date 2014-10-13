@@ -313,3 +313,5 @@ After that I will actually cheat all the hues a little bit moving some of them l
 
 ![](img/aseprite23.png)
 
+### Continues in the [Part 2](02_making_assets.md)
+
