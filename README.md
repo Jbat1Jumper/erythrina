@@ -6,3 +6,4 @@
 ### [00 - Introduction](doc/00_introduction.md)
 ### [01 - Making assets - Colors and palettes](doc/01_making_assets.md)
 ### [02 - Making assets - Drawing and animating](doc/02_making_assets.md)
+### [03 - Godot basics - Our character in Godot](doc/03_our_character_in_godot.md)

@@ -79,8 +79,46 @@ In the pass phase one leg is generally straight and the other is bended and exci
 
 And the last is the up phase, it when the front leg is rising high and the whole body will rise too. The back leg is stretched and he is standing in his toes. This is a good starting frame for a walk animation, the first thing you will do when you'll start walking is to rise your foot.
 
-These frames are very good but now we need to apply them on our Little Bald Boy. One bad new, he doesn't even have knees.
+After the up frame goes the contact frame again and the whole thing repeats over and over.
 
-### WIP
+These frames are very good but now we need to apply them on our Little Bald Boy. One bad new, he doesn't even have knees. And also he is standing in some sort of perspective in which he is half facing the camera but can walk sideways like a crab. 
 
-How will continue this story?
+So, lets draw him like a crab.
+
+![](img/2/spritegif11.gif)
+
+Yes, I'm losing the point, but he is lovely, yes you're lovely Mr. Little Bald. 
+
+Jeez, ok, concentrate, concentrate. 
+
+What we will do here is to rip off some frames and simplificate a lot. The entire walk cycle will be only 4 frames. We will have the same up phase but the other tree phases will be combined in one strange phase which we will creatively call it the "contact-down-pass" or CDP. On the CDP he will contact the ground, lower a little, and his legs will be somehow in a passing position.
+
+So our first try with the legs is awful.
+
+
+![](img/2/spritegif12.gif)
+
+It's more like he were stretching his legs making exersise. They are too far away, lets just, put them a little pixel closer.
+
+
+![](img/2/spritegif13.gif)
+
+Just moved the back leg a little forward and magic happened. And moving the front leg back gives the impression that he is running. Also lowered his head and rised his arm. 
+
+![](img/2/spritegif14.gif) ![](img/2/spritegif15.gif)
+
+But I do not like this one. He is more like a Little Bald Old guy, but hey, there's one important thing. If we lower his head that gives the effect that he is older.
+ 
+![](img/2/spritegif16.gif)
+
+And a cane generally makes the rest of the job.
+
+But lets go back to the normal Little Bald Boy. He's walking fine but his arms does not move. Lets just add a little of life there.
+
+![](img/2/spritegif17.gif) ![](img/2/spritegif18.gif) ![](img/2/spritegif19.gif)
+
+The trick with the hands is, wait what.. a faun... ok. The trick with the hands is that they are alternated respect of the legs and that they move before the legs. When the leg is reaching the front, the arm is heading to go back again.
+
+And this is all for now. We clean up our image so there are no duplicated frames and save our .ase file. Now lets import him to Godot and make him move just a little.
+
+### Continues [here](03_our_character_in_godot.md)
