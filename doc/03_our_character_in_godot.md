@@ -39,7 +39,7 @@ In Godot almost anything is a Node. And what is a node? Is the basic unit that's
 So, here, in Godot our game isn't more than a simple Tree, which is a collection of nested nodes.
 
 
-![](http://github.com/okamstudio/godot/wiki/images/tree.png)
+![](img/3/tree.png)
 
 
 _Image taken from wiki_
