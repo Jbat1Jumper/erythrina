@@ -1,4 +1,4 @@
-#Erythrina
+### Erythrina
 # Making assets Part 2
 
 Because only one part its not enough, and in the part 1 we actually didn't did any assets, holy moly. 
@@ -123,7 +123,7 @@ And this is all for now. We clean up our image so there are no duplicated frames
 
 ![](img/2/spritegif20.gif)
 
-The animation will be erratic but there is a solution if you wantto preview it nicely inside aseprite. Just select the frames you want to repeat, click on the gear icon in the timeline menu, and click Set Loop Section.
+The animation will be erratic but there is a solution if you want to preview it nicely inside aseprite. Just select the frames you want to repeat, click on the gear icon in the timeline menu, and click Set Loop Section.
 
 
 ![](img/2/sprite06.png)
