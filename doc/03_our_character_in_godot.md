@@ -66,7 +66,7 @@ Before anything else (better) we have to create a Node for our level. To do this
 ![](img/3/godot05.png)
 
 
-A menu will open with a whole world full of nodes. It's like a candy store of nodes, of all the colors of the rainbow. One important thing to know is that the red nodes are 3D, the green nodes are user interface nodes, and the blue ones are 2D nodes. Here we will be using 2D nodes and also some of the user interface nodes later.
+A menu will open with a whole world full of nodes. It's like a candy store of nodes, of all the colors of the rainbow, flowing down from the mountain, from the [mountain](https://www.youtube.com/watch?v=I2mRQx-b_OE). One important thing to know is that the red nodes are 3D, the green nodes are user interface nodes, and the blue ones are 2D nodes. Here we will be using 2D nodes and also some of the user interface nodes later.
 
 
 ![](img/3/godot06.png)
@@ -99,9 +99,72 @@ And I forget about something, rename our node. The names of the nodes are import
 
 Don't forget about hitting Enter because if not, it will discard your change. The same applies for almost any value entry in Godot, so remember, press Enter, or the sharks with laser guns will come for you.
 
+Silence and a small pause to think about it. Lets continue.
 
-### WIP ( I need to sleep, I'll continue later ) 
+One important thing to have in mind when you are working on this is, what are you doing actually? And then I forgot to explain what we are going to do. And yes, we are making a game.
 
+I know that in the introduction I said that I will be working on a game and working on it over these writings. But for the sake of getting things done, I will be making some small games by the way. There is nothing more comforting than seeing something finished and working. And there is nothing more frustrating than aiming for a game that must be the master piece of your life and failing over and over. 
+
+So is that we will be making our first little game, a small "CatchTheThingsThatFall" game that explains itself. There will be: Our character, some sorts of things that can fall, a little environment, and some UI.
+
+What things could fall? Surprise. There will be basically two sorts of things. Things that kill us, and things that give us points. But we don't have them yet so, lets do not worry about them. At first we have to put our character in here and then to move him a little. 
+
+Thus we will add another node inside the level_1 and now we will select the AnimatedSprite for this one. Then rename it to "player".
+
+Then we could set the sprite to the one we made before but, we actually didn't exported it. So lets export it first.
+
+There are two ways to store a sprite and both work fine. One is to use a spritesheet like this one.
+
+![](img/3/spritesheet01.png)
+
+And the other one is to store all the frames in separated files.
+
+Godot work well with both, but we will chose to store them in separated files because Godot have a really nice sprite manager to work in that way.
+
+So, if you were curious them you've noticed that ASEprite has an option to export the spritesheet but doesn't have an option to export all the frames in multiple files. That is because its actually implicit. To export an animation to multiple files you just have to save the file to a format that doesn't support animations (.png it's highly recommended because it doesn't lose quality and support transparency). It will save multiple files numbered with the frame number. Then all the export process it's just to press "Save copy as" and save it in our project folder.
+
+I will create a folder inside our project folder and in some rush of inspiration I will put it the name "player". Then we will just save a copy of our happy .ase inside that folder in the .png format. And we will end up with something like this.
+
+
+![](img/3/spritesheet02.png)
+
+Easy enough. Now we will import these frames inside Godot. We will go to our AnimatedSprite node "player" and we will take a look at the inspector.
+
+![](img/3/godot11.png)
+
+I've said that each node has properties, and there is where are all (the visible) properties. Each kind of node has it's own properties and they can also be extended with properties of a script. This particular node is an animated sprite, and one of it's fundamental properties is the sprite and frames themselves. Lets give them a closer look.
+
+![](img/3/godot12.png)
+
+This is the property that stores a SpriteFrames type object. We will not enter in little details now and we will just open the dropdown menu and select "New SpriteFrames".
+
+![](img/3/godot13.png)
+
+After that we will have a new empty SpriteFrames object created and we just have to edit it. So we will click on the however it's called ">" symbol to go to the SpriteFrame editor.
+ 
+![](img/3/godot14.png)
+
+And then we will have an empty window with a menu. From that menu we will select the folder icon which intuitively means open to actually open our recently exported frames.
+
+![](img/3/godot15.png)
+
+Then we just go to our images and select them. We can select multiple files, like almost everywhere, holding Ctrl or Shift.
+
+![](img/3/godot16.png)
+
+And as a result we will have all our frames imported and listed in the frame editor.
+
+![](img/3/godot17.png)
+
+We can go back to our scene clicking on the "<" arrow in the inspector menu or going to the scene tree and selecting any node from the scene. 
+
+![](img/3/godot18.png)
+
+And by surprise we will find our sprite there, standing and looking at us. We can move him and have fun imagining a whole new world and our own laws and currency system. But why is he blurry? It's actually ugly. We don't like blurry things, we want pixels. Whyyyyy!? 
+sc
+### Now, to sleep some days more.
+
+###### HIBERNATION ................................ [ ON ]
 
 <!---
 ## The size matters
