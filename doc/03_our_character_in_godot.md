@@ -161,7 +161,7 @@ We can go back to our scene clicking on the "<" arrow in the inspector menu or g
 ![](img/3/godot18.png)
 
 And by surprise we will find our sprite there, standing and looking at us. We can move him and have fun imagining a whole new world and our own laws and currency system. But why is he blurry? It's actually ugly. We don't like blurry things, we want pixels. Whyyyyy!? 
-sc
+
 ### Now, to sleep some days more.
 
 ###### HIBERNATION ................................ [ ON ]
