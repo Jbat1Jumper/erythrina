@@ -115,7 +115,9 @@ Then we could set the sprite to the one we made before but, we actually didn't e
 
 There are two ways to store a sprite and both work fine. One is to use a spritesheet like this one.
 
+
 ![](img/3/spritesheet01.png)
+
 
 And the other one is to store all the frames in separated files.
 
@@ -128,43 +130,106 @@ I will create a folder inside our project folder and in some rush of inspiration
 
 ![](img/3/spritesheet02.png)
 
+
 Easy enough. Now we will import these frames inside Godot. We will go to our AnimatedSprite node "player" and we will take a look at the inspector.
+
 
 ![](img/3/godot11.png)
 
+
 I've said that each node has properties, and there is where are all (the visible) properties. Each kind of node has it's own properties and they can also be extended with properties of a script. This particular node is an animated sprite, and one of it's fundamental properties is the sprite and frames themselves. Lets give them a closer look.
+
 
 ![](img/3/godot12.png)
 
+
 This is the property that stores a SpriteFrames type object. We will not enter in little details now and we will just open the dropdown menu and select "New SpriteFrames".
+
 
 ![](img/3/godot13.png)
 
+
 After that we will have a new empty SpriteFrames object created and we just have to edit it. So we will click on the however it's called ">" symbol to go to the SpriteFrame editor.
  
+
 ![](img/3/godot14.png)
+
 
 And then we will have an empty window with a menu. From that menu we will select the folder icon which intuitively means open to actually open our recently exported frames.
 
+
 ![](img/3/godot15.png)
+
 
 Then we just go to our images and select them. We can select multiple files, like almost everywhere, holding Ctrl or Shift.
 
+
 ![](img/3/godot16.png)
+
 
 And as a result we will have all our frames imported and listed in the frame editor.
 
+
 ![](img/3/godot17.png)
+
 
 We can go back to our scene clicking on the "<" arrow in the inspector menu or going to the scene tree and selecting any node from the scene. 
 
+
 ![](img/3/godot18.png)
+
 
 And by surprise we will find our sprite there, standing and looking at us. We can move him and have fun imagining a whole new world and our own laws and currency system. But why is he blurry? It's actually ugly. We don't like blurry things, we want pixels. Whyyyyy!? 
 
-### Now, to sleep some days more.
+The answer is "interpolation". When we scale an image there are different filter algorithms applied to the image to make it look good. Some of them are Linear/Cubic/Bilinear/Bicubic/Bi-etc interpolation. They are good for photographs because they soften the image colors, but not for us. We wanted each pixel to look sharp and because of that we do not want to use them. 
 
-###### HIBERNATION ................................ [ ON ]
+So we will go to the project settings and disable the image filter. 
+
+
+![](img/3/godot19.png)
+
+
+There are many options which we will not touch for now. Now we have a blur problem and we need to solve it. 
+
+
+![](img/3/godot20.png)
+
+
+And after that we close the settings and then we sadly still see the blur in his face. That's no problem, it's just that the editor needs to be restarted to take the changes. So we save the scene in the project folder, I will call it "level_1.scn". Close and open evenrything again. Then we take a look at our sharp and big pixels.
+
+
+![](img/3/godot21.png)
+
+
+If you closed the project and after opening it again the scene is not opened you just need to open it from the Scene menu. By default the scene that opens is the project main scene, but we haven't configured one yet.
+
+Now what? Lets animate him.
+
+## Animator
+
+From all the nodes, there's one node, to rule them all. This node has the power to control all the other nodes, to bend them against their will. This node is the AnimationPlayer node. And we will invoke his power. 
+
+So we will select our player, go to the candy node store and add a AnimationPlayer node to him.
+
+
+![](img/3/godot22.png)
+
+
+And after that, the power of the animator will reside inside the player node. And we can use its power at our will.
+
+
+![](img/3/godot23.png)
+
+
+
+
+
+
+
+
+
+
+
 
 <!---
 ## The size matters

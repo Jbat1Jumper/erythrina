@@ -1,2 +1,10 @@
-::res://::1413243178
+::res://::1413773693
 icon.png::ImageTexture::1413243062::
+level_1.scn::PackedScene::1413773693::
+::res://player::1413530159
+character0.png::ImageTexture::1413530154::
+character1.png::ImageTexture::1413530154::
+character2.png::ImageTexture::1413530154::
+character3.png::ImageTexture::1413530154::
+character4.png::ImageTexture::1413530154::
+character5.png::ImageTexture::1413530154::
