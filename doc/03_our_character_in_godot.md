@@ -221,12 +221,58 @@ And after that, the power of the animator will reside inside the player node. An
 ![](img/3/godot23.png)
 
 
+Also lets rename it to "anim" to keep the things simple. 
+
+With this power we can create our first animation. Let's just click on the new animation button and name it "idle".
 
 
+![](img/3/godot24.png)
 
 
+Then we just need to edit that animation. Clicking on the pencil icon will open the animation editor.
 
 
+![](img/3/godot25.png)
+
+
+There we have a timeline, which doesn't have any track. Here, each track will be a different property of some object. Also notice the keys that have appeared at the right of each property. With them we can 'keyframe' a property, that is, store it's value in a particular position of the animation. Later we will manage custom tracks like function call tracks and stuff, but now we only need to animate our character frame property.
+
+Let's click on the key at the 'Frame' property and see what happens. Also I will scale up the editor a little because I was running out of space. 
+
+
+![](img/3/godot26.png)
+
+
+Yes, it gently ask us and advise that we are creating a new track. And yes, of course we want to create a new track. Now we should see a little blue dot in a new track in the animation editor. That dot is our keyframe, we actually can move it to adjust our animation. When the animation passes over that frame the given value will be set to that given property.
+
+Which value, what did we set? We actually had set the first frame of the animation to be the first keyframe in the Godot animation. Now we just have to move the slide to another position and just set another keyframe, and then repeat that until I die. But because I'm not going to die soon, I hope, we will select the go to the second 0.9, change the Frame to the second frame where he has the eyes closed, and then keyframe again the first frame at the second 1.0. Now we can press the play button and look at our creation.
+
+He beautifully blinks one time and then he just, keep his eyes open, drying them, like if he was playing a challenge or something. That happens because the animation is not set in loop mode. To do so we need to go to the animation properties and set it to true or just to tap it on the editor.
+
+![](img/3/godot27.png)
+
+And now we can enjoy a nice lifeless blinking animation.
+
+![](img/3/godot01.gif)
+
+Again it's a little bit monotone so we will change the lenght 'Len(s)' of the animation to, don't know, 5 seconds, and then fill them with random blinks.
+
+
+![](img/3/godot02.gif)
+
+
+I find this a way better. And there is it. Our finished blinking idle animation. Is not that much but it's something.
+
+I will speeding up a little and just show the "walk" animation. It's the same principle so let's not waste screenshots on it, we need them to take pictures of the Little Bald Boy suggestive calendar.
+
+
+![](img/3/godot03.gif)
+
+
+So that's it. We did it. Now comes the juicy part.
+
+
+###### MEN ON CODE
 
 
 
