@@ -269,10 +269,7 @@ I will speeding up a little and just show the "walk" animation. It's the same pr
 ![](img/3/godot03.gif)
 
 
-So that's it. We did it. Now comes the juicy part.
-
-
-###### MEN ON CODE
+So that's it. We did it. Now comes the juicy part. Or not? Discover [here](04_drawing_the_environment.md).
 
 
 
