@@ -1,11 +1,6 @@
-::res://::1414469173
+::res://::1414469549
 icon.png::ImageTexture::1413243062::
-level_1.scn::PackedScene::1414469173::
-::res://arialB20::1414431274
-font.fnt::::1414431274::
-font_0.dds::ImageTexture::1414431257::
-font_0.png::ImageTexture::1414431212::
-font_godot.fnt::Font::1414431181::font<>../../../../../../Windows/Fonts/arial.ttf<>3c9390eb37dd4ab8c670ecd71feb7f71<>1400537424
+level_1.scn::PackedScene::1414469357::
 ::res://environment::1414462478
 background0.png::ImageTexture::1414440529::
 background1.png::ImageTexture::1414440529::
