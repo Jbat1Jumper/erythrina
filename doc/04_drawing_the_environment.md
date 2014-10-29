@@ -239,7 +239,6 @@ Another thing that we could do is to play just the current scene by just clickin
   
 ![](img/4/godot13.png)
 
-
-### And taraaaan. I need some sleep...
-
 Do not forget to lock everything when you're done. Nobody wants shark shaped velociraptors in its weekend.
+
+### Now let's move to the [code](05_coding_our_character.md)

@@ -8,3 +8,4 @@
 ### [02 - Making assets - Drawing and animating](doc/02_making_assets.md)
 ### [03 - Godot basics - Our character in Godot](doc/03_our_character_in_godot.md)
 ### [04 - Making more assets - Drawing the environment](doc/04_drawing_the_environment.md)
+### [05 - Coding our character](doc/05_coding_our_character.md)
