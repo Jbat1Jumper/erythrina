@@ -185,7 +185,7 @@ The dot here targets the parent of the animator and after that it works like a f
 ![](img/4/godot08.png)
 
 Godot did it wery well on having all the api reference inside the editor.
-I will not enter in details, but I will say that the only thing we need to pass to the "play" function is a string with the name of the wanted animation. 
+I will not enter in details, but I will say that the only thing we need to pass to the ```play()``` function is a string with the name of the wanted animation. 
 
 Therefore we will go to the desired position in the animation and we will add a new keyframe clicking on the yellow plus sign on the right of the track.
 
