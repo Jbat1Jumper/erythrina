@@ -1,5 +1,5 @@
 ### Erythrina
-# Coding our characer
+# Coding our character
 
 Yes, finally, something useful. Maybe, I hope. In the last tutorial, or chapter, or whatever, I actually forgot the ballons and the dialog. It was more of the same, add an animated sprited, add an animator, etc, repeat. But I've placed the dialog like the menu, inside another object actually called "dialogs" because we will make more of these. With this covered let's move to the code itself.
 
