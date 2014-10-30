@@ -139,6 +139,6 @@ Now let's head to the next topic on our list.
 
 . . .
 
-Tomorrow. Now I only hope that there aren't more tornadoes nearby. They love to stay for a while, go from bar to bar, get drunk and make a mess.
+Tomorrow. Now I only hope that there aren't more tornadoes nearby. They love to stay for a while, go from bar to bar, get drunk and make a mess. I need to buy a gun.
 
 . . .
