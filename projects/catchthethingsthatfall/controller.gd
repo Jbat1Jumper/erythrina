@@ -15,6 +15,9 @@ func _process(deltatime):
 		move_player(h_axis)
 		
 	last_h_axis = h_axis
+	
+	if Input.is_key_pressed(KEY_T):
+		get_node("../food_spawner").spawn_food("pizza", 0)
 
 func get_h_axis():
 	var h_axis = 0	

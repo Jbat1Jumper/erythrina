@@ -1,7 +1,8 @@
-::res://::1414644394
+::res://::1414824310
+controller.gd::GDScript::1414824310::
 icon.png::ImageTexture::1413243062::
-level_1.scn::PackedScene::1414644391::
-player.gd::GDScript::1414644394::
+level_1.scn::PackedScene::1414824293::
+player.gd::GDScript::1414824310::
 ::res://environment::1414462478
 background0.png::ImageTexture::1414440529::
 background1.png::ImageTexture::1414440529::

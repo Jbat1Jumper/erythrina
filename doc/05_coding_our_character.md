@@ -412,7 +412,7 @@ But this will only work if the viewport doesn't change, so we need to make sure 
 > ###### Disclaimer: 
 Actually, I'm doing this at the same time as I'm writing this. So it's normal to have some issues. And one is that it doesn't work well with multi-touch (T__T). If we use only one finger it works well but if we tap in many places, for example in the sides, it sometimes can detect only one touch, and you will need to release the finger, and then tap again. This is really annoying when you're "playing", but it works at least. I will change it to some giant invisible buttons which move with the player, later. 
 
-Now we are done with this. Let's go and add some food and other stuff to this. But this page became a little big so let's go [here](http://sleepfoundation.org/).
+Now we are done with this. Let's go and add some food and other stuff to this. But this page became a little big so let's go [here](06_coding_more.md).
 
 
 
