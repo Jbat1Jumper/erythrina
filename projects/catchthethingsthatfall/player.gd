@@ -15,7 +15,16 @@ func _ready():
 func _process(deltatime):
 	var pos = get_pos()
 	pos.x += speed * deltatime * heading_direction
+	pos = bound_pos(pos)
 	set_pos(pos)
+	
+func bound_pos(pos):
+	if pos.x > 152:
+		pos.x = 152
+	if pos.x < 28:
+		pos.x = 28
+	return pos
+	
 
 
 # Our Character Controller API
@@ -37,5 +46,8 @@ func stop():
 	heading_direction = 0.0
 
 	
+# A little help
+func get_width():
+	return get_sprite_frames().get_frame(get_frame()).get_width()
 	
 	

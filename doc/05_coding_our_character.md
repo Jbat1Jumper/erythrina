@@ -71,7 +71,7 @@ Maybe he's just stalking that fat guy. Our Little Bald Boy is actually a weird p
 
 Now we can adjust the speed directly from the inspector to a value which satisfies us.
 
-. . .
+\- - -
 
 Ok, a tornado has just destroyed the electrical network in my homeworld so it's not easy to be here. Almost everyone is getting insane and all the remaining cyber-tea houses are full. But that's fine, we will survive.
 
@@ -141,4 +141,280 @@ Now let's head to the next topic on our list.
 
 Tomorrow. Now I only hope that there aren't more tornadoes nearby. They love to stay for a while, go from bar to bar, get drunk and make a mess. I need to buy a gun.
 
+\- - -
+
+Oh, luckily the tornadoes are gone. But our civilization is a mess. How do we think to live together with tornadoes if we actually do not speak with them? Ok, it's just a thought which escaped. Let's go with our stuff.
+
 . . .
+
+We left with our character moving nicely but also pointlessly. He needs to know where to go, he needs a desire. And we can grant that desire to him, with only a keystroke. So we are going to create a node to control that desire. Let's create an empty node of just the "Node" type and call it "controller". And then add a new script to it, also called "controller.gd".
+
+```python 
+extends Node
+
+func _ready():
+	set_process(true)
+	
+func _process(deltatime):
+	if Input.is_key_pressed(KEY_LEFT):
+		print("You are pressing left")
+	if Input.is_key_pressed(KEY_RIGHT):
+		print("You are pressing right")
+
+```
+
+We used two new things in this script. One is the `Input` object to which we can ask the key's state. And another not less important the `print()` function. This function is in first place for debug purposes, and it writes almost whatever you want to the console. That console will not be present in the finished exported game (unless we want the opposite).
+
+Now we can run the scene and look at all the places where we can see the output.
+
+![](img/5/godot08.png)
+
+This is rather obvious but now we can see that out script is working. So let's move to the `Input` part.
+
+Here we used the `Input.is_key_pressed(KEY)` function to get the state of that key at that moment, and this is not the best way to do it. In Godot there is a better way to handle input, using *actions*.
+
+An action can be many things, and also support many devices at the same time. We can configure that actions inside the *Project Settings* in a tab named *Input Map*.
+
+
+![](img/5/godot09.png)
+
+There are already many actions preconfigured showing how powerful can be to support all that devices from just one screen. But we don't need that actions and, because I like the things clean (when they can be clean), I will erase them and only add two actions named "player_left" and "player_right".
+
+![](img/5/godot10.png)
+
+Then we will go to our script again and change it to handle our new actions.
+
+```python
+extends Node
+
+func _ready():
+	set_process(true)
+	
+func _process(deltatime):
+	if Input.is_action_pressed("player_left"):
+		print("You are pressing left")
+	if Input.is_action_pressed("player_right"):
+		print("You are pressing right")
+```
+
+Almost the same, but now we can change the input settings from a nice menu.
+
+Now that we know that our input works we can delete the prints and go with the movement logic.
+
+```python
+extends Node
+
+var player
+
+func _ready():
+	player = get_node("../player")
+	set_process(true)
+	
+func _process(deltatime):
+	if Input.is_action_pressed("player_left"):
+		player.go_left()
+	if Input.is_action_pressed("player_right"):
+		player.go_right()
+```
+
+And yeah, our Little Bald Boy is moving but... wait.. he doesn't stops. And also if we keep the button pressed he slides again. Oh, what a... Don't worry.
+
+He doesn't stops because we never called stop, it's logical. And because the pressed input returns true every frame our animations also resets. Let's add some logic here.
+
+```python
+extends Node
+
+var player
+var h_axis = 0
+
+func _ready():
+	player = get_node("../player")
+	set_process(true)
+	
+func _process(deltatime):
+	# store the input
+	var k_left = Input.is_action_pressed("player_left")
+	var k_right = Input.is_action_pressed("player_right")
+	
+	# reset the axis
+	h_axis = 0
+	
+	# move the axis (if we press both the axis will not move)
+	if k_left:
+		h_axis -= 1
+	if k_right:
+		h_axis += 1
+		
+	# now lets use that axis
+	if h_axis > 0:
+		player.go_right()
+	elif h_axis < 0:
+		player.go_left()
+	else:
+		player.stop()
+```
+
+Woah, that escalated quickly. It may seem larger, and it is but is actually simple. I've hand-coded a simple axis which moves from -1 to 1. Also i've stored the input states in variables with shorter names. And this works fine, so fine that we will store it in a function like this one.
+
+```python
+func get_h_axis():
+	var h_axis = 0	
+	if Input.is_action_pressed("player_left"):
+		h_axis -= 1
+	if Input.is_action_pressed("player_right"):
+		h_axis += 1
+	return h_axis
+```
+
+But now we still have the problem with the animation, we need to call `go_*/stop` only once. To do so we need to save the last state of our input, and only call functions if it changes. Actually this is done many times in many places in many different ways, it's a common pattern. Let's see at our code now.
+
+```python
+extends Node
+
+var player
+var last_h_axis = 0
+
+func _ready():
+	player = get_node("../player")
+	set_process(true)
+	
+func _process(deltatime):
+	var h_axis = get_h_axis()
+	
+	if last_h_axis != h_axis:
+		move_player(h_axis)
+		
+	last_h_axis = h_axis
+
+func get_h_axis():
+	var h_axis = 0	
+	if Input.is_action_pressed("player_left"):
+		h_axis -= 1
+	if Input.is_action_pressed("player_right"):
+		h_axis += 1
+	return h_axis
+
+func move_player(h_axis):
+	if h_axis > 0:
+		player.go_right()
+	elif h_axis < 0:
+		player.go_left()
+	else:
+		player.stop()
+```
+
+I've also separated the part where we send the commands to the player in another function. Now we the `_process()` function body is easy to read and everything is nicely separated.
+
+Now we can run freely everywhere. Actually we can run outside the screen, which is not what we want in our game. Because we didn't saw colliders yet we will solve it in the easy way. We'll just check the current x value and clip it between two bound values so it will not go outside the screen. We will put this changes in the player process method.
+
+```python
+func _process(deltatime):
+	var pos = get_pos()
+	pos.x += speed * deltatime * heading_direction
+	pos = bound_pos(pos)
+	set_pos(pos)
+	
+func bound_pos(pos):
+	if pos.x > 152:
+		pos.x = 152
+	if pos.x < 28:
+		pos.x = 28
+	return pos
+```
+
+Some dirty dirty hard-coded values to limit our character. We will come back here and clear it later, but for now it's fine. It works, where's the need to worry.
+
+Let's move to the next.
+
+## Touch input
+
+Here are many ways of doing this. We could add buttons on the screen, we could add two invisible giant buttons on each half of the screen, etc. Every solution is good if it solves the problem. Here we will use another way which is to listen to the touch, read it's position, and then decide where to move. 
+
+We need to add another action for the touch with the mouse click as an input. Then we will modify our controller code to handle our new input also.
+
+```python
+func get_h_axis():
+	var h_axis = 0	
+	if Input.is_action_pressed("player_left"):
+		h_axis -= 1
+	if Input.is_action_pressed("player_right"):
+		h_axis += 1
+	if Input.is_action_pressed("player_touch"):
+		if Input.get_mouse_pos().x > player.get_pos().x * 4: # a magic 4
+			h_axis += 1
+		elif:
+			h_axis -= 1
+	return h_axis
+```
+
+Now our character will walk at the mouse click. The magic 4 is because the mouse coords are measured in pixels on the screen and our camara has x4 zoom, so we need to compensate it.  But there are some problems again. Let's get a look.
+
+![](img/5/gif_04.gif)
+
+Oh. First of all we forgot that the origin of our sprite was at the corner. And the second problem is that when he reaches the mouse he jiggles and dances. That's ok, because we didn't gave him a threshold where to stop.
+
+A second and a little improved version of that code will look like this one.
+
+```python
+func get_h_axis():
+	var h_axis = 0	
+	if Input.is_action_pressed("player_left"):
+		h_axis -= 1
+	if Input.is_action_pressed("player_right"):
+		h_axis += 1
+	h_axis = get_touch_h_axis(h_axis)
+	return h_axis
+	
+func get_touch_h_axis(h_axis):
+	if Input.is_action_pressed("player_touch"):
+		var px = (player.get_pos().x + 8) * 4
+		if Input.get_mouse_pos().x > px + 2:
+			h_axis += 1
+		elif Input.get_mouse_pos().x < px - 2:
+			h_axis -= 1
+	return h_axis
+```
+
+That `+ 2 / - 2` is the gray-zone in which the character will not move. There are plenty of ugly things, but it works. A little thing that I do not like at all is to hard-code the sprite width (the `+ 8` on the player position). And this is because to obtain the width of it we need to get its texture. In a simple *Sprite* we have only one texture, and a clipping rectangle. There, we can get the dimensions of the rectangle and we're done, but with an *AnimatedSprite* we are in a little problem, we have many textures. But don't worry, get the current image it's not hard. We only have to use some functions.
+
+```python
+func get_touch_h_axis(h_axis):
+	if Input.is_action_pressed("player_touch"):
+		var pw = player.get_sprite_frames().get_frame(player.get_frame()).get_width()
+		var px = (player.get_pos().x + pw/2) * 4
+		if Input.get_mouse_pos().x > px + 2:
+			h_axis += 1
+		elif Input.get_mouse_pos().x < px - 2:
+			h_axis -= 1
+	return h_axis
+```
+
+Yeah, many functions. And all in one line, a dirty line. `get_sprite_frames()` returns a *SpriteFrames* object from which we can get the texture. Luckily we can hide this horribly monster inside a function like this one in our player.
+
+```python
+# A little help
+func get_width():
+	return get_sprite_frames().get_frame(get_frame()).get_width()
+```
+
+And then just call it. Yeah, it's encapsulation babe. The last problem is to get rid of that magic 4. It works only if the resolution doesn't change, and if we want to put our game in, for example, a phone, we need to get it to work on multiple resolutions. And here is where we start to reconciderate the giant invisible buttons.
+After some quirks and workarounds one solution was to create a custom function to get the mouse. One which will get the mouse in in-game coordenates
+
+```python
+func get_world_mouse():
+	var mp = Input.get_mouse_pos()  # the mouse position on the screen
+	var vms = OS.get_video_mode_size()  # the size of the screen
+	var ors = Vector2(196, 127)  # the size of the viewport
+	return mp * (ors/vms)  # then we just scale it
+```
+But this will only work if the viewport doesn't change, so we need to make sure that *stretch_aspect* is set to "ignore". This will work well on any device but if the resolution aspect is very distinct to the original it may look weird.
+
+> ###### Disclaimer: 
+Actually, I'm doing this at the same time as I'm writing this. So it's normal to have some issues. And one is that it doesn't work well with multi-touch (T__T). If we use only one finger it works well but if we tap in many places, for example in the sides, it sometimes can detect only one touch, and you will need to release the finger, and then tap again. This is really annoying when you're "playing", but it works at least. I will change it to some giant invisible buttons which move with the player, later. 
+
+Now we are done with this. Let's go and add some food and other stuff to this. But this page became a little big so let's go [here](http://sleepfoundation.org/).
+
+
+
+
+
