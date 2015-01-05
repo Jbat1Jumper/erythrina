@@ -118,6 +118,6 @@ Now we move our food spawner up above the sky and then food will rain.
 Yeah, we are almost done. Now we need to actually catch it.
 
 
-## Collisions
+#### Next topic, collisions and stuff, is now aviable --> [HERE](07_coding_even_more_aka_the_fat_guy_returns.md) <--
 
-#### WIP
+P.d.: Whoever who has read this, sorry for the long break.

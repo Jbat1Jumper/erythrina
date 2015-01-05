@@ -2,6 +2,7 @@
 extends Node2D
 
 var speed = 50.0
+var exploded = false
 
 func _ready():
 	set_process(true)
@@ -17,3 +18,22 @@ func _process(deltatime):
 	pos.y += speed * deltatime
 	set_pos(pos)
 	
+func get_score():
+	var kind = get_child("kind").get_children()[0].get_name()
+	if kind == "pizza":
+		return 10
+	elif kind == "icecream":
+		return 15
+	elif kind == "hamburger":
+		return 25
+	elif kind == "fries":
+		return 5
+	return 0
+	
+func can_eat():
+	return not exploded
+	
+func explode():
+	exploded = true
+	get_node("explosion/anim").play("boom")
+	get_node("kind").hide()

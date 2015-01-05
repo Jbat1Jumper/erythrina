@@ -1,16 +1,20 @@
 
 extends AnimatedSprite
 
+var FoodType = preload("food.gd")
+
 
 export var speed = 2.0
 
 var heading_direction = 0.0
 var anim
+var body
+var score = 0
 
 func _ready():
+	body = get_node("./body")
 	anim = get_node("./anim")
 	set_process(true)
-	
 
 func _process(deltatime):
 	var pos = get_pos()
@@ -18,6 +22,18 @@ func _process(deltatime):
 	pos = bound_pos(pos)
 	set_pos(pos)
 	
+	var things = body.get_overlapping_bodies()
+	if things.size() != 0:
+		for thing in things:
+			if FoodType.instance_has(thing):
+				eat_food(thing)
+
+func eat_food(food):
+	if food.can_eat():
+		score += food.get_score()
+		food.explode()
+		
+			
 func bound_pos(pos):
 	if pos.x > 152:
 		pos.x = 152
