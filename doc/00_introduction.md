@@ -1,7 +1,7 @@
 ### Erythrina
 # Introduction
 
-So, what's all this about? Apart from being a bunch of grammatical horrors and nonsense. This is (I hope) a serie of tutorials about the development of a 2D game, from scratch to something big (I hope again), in the Godot Engine. 
+So, what's all this about? Apart from being a bunch of grammatical horrors and nonsense. This is (I hope) a series of tutorials about the development of a 2D game, from scratch to something big (I hope again), in the Godot Engine. 
 
 There are so many topics of which caught my interest and I will be (trying to) writing about them once a week. They go from basic asset creation, passing by useful tricks and ideas, up to some crazy stuff that I myself have not implemented yet. 
 
