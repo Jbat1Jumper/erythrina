@@ -51,7 +51,7 @@ Its arms 'disappeared' in some way, but just because he is naked. Oh, no, I've b
 
 Good, God, finally, no sin. Ok, and, yeah! His arm is right here! But he still bald, although it's nothing bad about being bald. I will call him Little Bald Boy. 
 
-He doesn't feel alive. He blinks now, but hi lacks the breath effect and for this time, we will not animate his breath. Because if we will try to move him just a little, we will move him by just one pixel. But that pixel will be actually too much. If we make animations like this ones.
+He doesn't feel alive. He blinks now, but he lacks the breath effect and for this time, we will not animate his breath. Because if we will try to move him just a little, we will move him by just one pixel. But that pixel will be actually too much. If we make animations like this ones.
 
 ![](img/2/spritegif06.gif)   ![](img/2/spritegif07.gif)    ![](img/2/spritegif08.gif)  ![](img/2/spritegif09.gif) 
 
