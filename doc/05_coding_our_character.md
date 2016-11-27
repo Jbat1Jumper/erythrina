@@ -340,7 +340,7 @@ func get_h_axis():
 	if Input.is_action_pressed("player_right"):
 		h_axis += 1
 	if Input.is_action_pressed("player_touch"):
-		if Input.get_mouse_pos().x > player.get_pos().x * 4: # a magic 4
+		if get_viewport().get_mouse_pos().x > player.get_pos().x * 4: # a magic 4
 			h_axis += 1
 		elif:
 			h_axis -= 1
@@ -368,9 +368,9 @@ func get_h_axis():
 func get_touch_h_axis(h_axis):
 	if Input.is_action_pressed("player_touch"):
 		var px = (player.get_pos().x + 8) * 4
-		if Input.get_mouse_pos().x > px + 2:
+		if get_viewport().get_mouse_pos().x > px + 2:
 			h_axis += 1
-		elif Input.get_mouse_pos().x < px - 2:
+		elif get_viewport().get_mouse_pos().x < px - 2:
 			h_axis -= 1
 	return h_axis
 ```
@@ -382,9 +382,9 @@ func get_touch_h_axis(h_axis):
 	if Input.is_action_pressed("player_touch"):
 		var pw = player.get_sprite_frames().get_frame(player.get_frame()).get_width()
 		var px = (player.get_pos().x + pw/2) * 4
-		if Input.get_mouse_pos().x > px + 2:
+		if get_viewport().get_mouse_pos().x > px + 2:
 			h_axis += 1
-		elif Input.get_mouse_pos().x < px - 2:
+		elif get_viewport().get_mouse_pos().x < px - 2:
 			h_axis -= 1
 	return h_axis
 ```
