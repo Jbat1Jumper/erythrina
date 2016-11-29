@@ -342,7 +342,7 @@ func get_h_axis():
 	if Input.is_action_pressed("player_touch"):
 		if get_viewport().get_mouse_pos().x > player.get_pos().x * 4: # a magic 4
 			h_axis += 1
-		elif:
+		else:
 			h_axis -= 1
 	return h_axis
 ```
