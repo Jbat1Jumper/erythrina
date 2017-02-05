@@ -9,8 +9,8 @@
 ```
 
 ## Índice
-### [00 - Introducción](es/00_introduction.md)
-### [01 - Creando assets - Colores y paletas](doc/01_making_assets.md)
+### [00 - Introducción](00_introduction.md)
+### [01 - Creando assets - Colores y paletas](01_making_assets.md)
 
 (En progreso)
 
