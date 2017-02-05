@@ -116,55 +116,30 @@ recomienda usarlos con total saturación. Es muy útil para hacer cosas que dest
 
 ![](../img/analogous_colors.png)
 
+Elige un color base, luego coge el color adyacente en la rueda. Esta combinación
+generalemente es muy armoniosa y agradable. Carece de contraster y requiere del uso del negro y del blanco para añadir contraste. Incluo puedes combinarlos con el color complementario para algo que deba ser realmente destacado.
 
-Pick a base color, and then pick the adjacent colors in the weel. This combination is usually very harmonious and confortable. It lacks of contrast and some usage of black and white is needed to add contrast. You can also combine it with the complementary color for something that must be really noticeable.
+##### Separar los colores complementarios
 
+![](../img/comp_analogous_colors.png)
 
+Elige un color base y luego, en lugar de elegir el complementario, escoge el análogo del complementario. Obtendrás casi el mismo contraste que con el complementario pero será más fácil de usar y más comfortable al ojo.
 
-##### Split complementary colors
+##### Triángulo de colores
 
+![](../img/triangle_colors.png)
 
-
-![](img/comp_analogous_colors.png)
-
-
-
-Pick a base color and then, instead of picking the complementary pick the analogous colors of the complementary. You will have almost the same contrast as the complementary but its easier to use and more confortable to the eye.
-
-
-##### Triangle colors
-
-
-
-![](img/triangle_colors.png)
-
-
-
-Pick a base color and then chose another two making a triangle in the wheel so the three colors are evenly spaced.
-
-
+Elige un color base y luego escoge otros dos haciendo un triángulo en la rueda de modo que los tres colores estén separados.
 
 ##### Square/Rectangle Colors
 
+![](../img/square_colors.png)
 
+Elegir dos pares de colores complementarios. El resultado será bastante versátil para tener un buen contraste y buena armonía. Tendrás colores cálidos como colores frescos. Esta combinación funciona mejor si uno de los colores es el dominante.
 
-![](img/square_colors.png)
+Todos estos colores podrían parecer muy simples y coloridos. Pero todo lo demás está en la variación. Cogiendo un conjunto de colores análogos podríamos hacer algo como esto.
 
-
-
-Pick two pairs of complementary colors. The result may be versatile enough to have some good contrast and good harmony. You will also have the same warm colors as well as cool colors. This combinations work better if one color is the dominant.
-
-
-
--
-
-All the colors here maybe may look too simple and colorful. But everything else is in the variation. Taking a set of analogous colors you could make something like this.
-
-
-
-![](img/analogous_example.png)
-
-
+![](../img/analogous_example.png)
 
 And I really don't know what is that. But in that thing there are only three colors and everything else is just tint and shadow. And that colors are the same (have the same hue) that the ones on the right. It blew my mind the first time I saw it.
 
