@@ -80,41 +80,41 @@ A menor saturación del colorm, más negro o blanco tiene. El neutro podría ser
 
 ## Cálido y fresco
 
-One thing that is important to know and is a little obvious at sight is the difference of warm and cool colors.
+Una cosa que es importante conocer y es obvia a primera vista es la diferencia entre
+colres cálidos y frescos.
 
-The color wheel is split in two sections.
+La rueda de color se divide en dos secciones.
 
 ![](../img/warm_cool.png)
 
-It's usefull to know what are you drawing and what feelings are you trying to transmit. For example the warm colors generally are energetic and vivid and cool colors are calm and in occasions sad. Try, for example, to avoid mixing warm colors  (at least in equal amounts) when trying to draw something that must feel cool.
+Es útil saber lo que estamos dibujando y qué sentimentos estamos tratando de transmitir.
+Por ejemplo, los colores cálidos generalmente son vivos y enérgicos, mientras que los
+colores frescos son calmados y triste en ocasiones. Trata de evitar mezclar colores
+cálidos (al menos en cantidades iguales) cuando trates de dibujar algo que deba sentirse fresco.
 
+## Selección de colores
 
-## Picking colors
+La cosa más importante que hay que saber sobre los colores es seleccionar los menos posibles.
+Hay que seleccionar la mínima cantidad de colores que represente el dibujo. Cuantos menos
+colores se cojan, más 'armónico' lucirá el dibujo. Si se exagera cogiendo un único
+color todo será monocromático y no habrá lugar para colores incorrectos (Sólo habrá un color).
 
-The most important thing to know about colors is to pick the fewest possible. You must pick the minimum amount that will explain the picture. The less colors you pick the more 'harmonic' will look the picture. If you exaggerate and pick only one color everything will be monochrome and there will not be place for incorrect colors (there will be only one).
+Para algunas cosas elegir de dos a cuatro colores es suficiente. El resto son sólo
+variaciones agregando negro y blanco.
 
-For many things picking from two to four colors its just enough. The rest are just variations adding black and white.
+Aquí vemos algunos consejos para elegir colores y algunos casos de uso.
 
-Here are some tips for picking colors and some use cases.
+##### Colores complementarios
 
-##### Complementary colors
+![](../img/complementary_colors.png)
 
+Escoge un color base, luego coge el color opuesto en la rueda. Ese color será
+el color complementario. Tendrmos el mayor contraste de tinte de modo que no se
+recomienda usarlos con total saturación. Es muy útil para hacer cosas que destaquen.
 
+##### Colores análogos
 
-![](img/complementary_colors.png)
-
-
-
-Just pick a base color, then pick the opposite color in the wheel. That color will be the complementary color. It will have de highest hue contrast so its not recommended to use them at full saturation. Its very useful to make things noticeable.
-
-
-
-##### Analogous colors
-
-
-
-
-![](img/analogous_colors.png)
+![](../img/analogous_colors.png)
 
 
 Pick a base color, and then pick the adjacent colors in the weel. This combination is usually very harmonious and confortable. It lacks of contrast and some usage of black and white is needed to add contrast. You can also combine it with the complementary color for something that must be really noticeable.
