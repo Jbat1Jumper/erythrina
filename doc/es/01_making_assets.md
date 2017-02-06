@@ -141,7 +141,8 @@ Todos estos colores podrían parecer muy simples y coloridos. Pero todo lo demá
 
 ![](../img/analogous_example.png)
 
-And I really don't know what is that. But in that thing there are only three colors and everything else is just tint and shadow. And that colors are the same (have the same hue) that the ones on the right. It blew my mind the first time I saw it.
+Realmente no sé lo que es eso. Pero en esa caso sólo hay tres colores todo lo demás es
+teñir y sombrear. And that colors are the same (have the same hue) that the ones on the right. It blew my mind the first time I saw it.
 
 
 
