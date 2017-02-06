@@ -1,4 +1,6 @@
+
 # Erythrina
+
 ##### Indie 2D Game for Godot Engine and a series of tutorials of how I'm making it.
 
 
@@ -11,3 +13,7 @@
 ### [05 - Coding our character](doc/05_coding_our_character.md)
 ### [06 - Coding more](doc/06_coding_more.md)
 ### [07 - Coding even more - Aka the fat guy returns](doc/07_coding_even_more_aka_the_fat_guy_returns.md)
+
+## Translation
+
+* [Spanish translation](./doc/es/README.md)
