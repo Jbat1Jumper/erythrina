@@ -131,7 +131,7 @@ Elige un color base y luego, en lugar de elegir el complementario, escoge el an�
 
 Elige un color base y luego escoge otros dos haciendo un triángulo en la rueda de modo que los tres colores estén separados.
 
-##### Square/Rectangle Colors
+##### Rectángulo de colores
 
 ![](../img/square_colors.png)
 
@@ -141,36 +141,26 @@ Todos estos colores podrían parecer muy simples y coloridos. Pero todo lo demá
 
 ![](../img/analogous_example.png)
 
-Realmente no sé lo que es eso. Pero en esa caso sólo hay tres colores todo lo demás es
-teñir y sombrear. And that colors are the same (have the same hue) that the ones on the right. It blew my mind the first time I saw it.
+Realmente no sé lo que es eso. Pero en este caso sólo hay tres colores, todo lo demás es
+tinte y sombra. Y esos colores son el mismo (tienen el mismo tinte HUE) que uno de la derecha. Mi cabeza echó a volar la primera vez que lo ví.
 
+Si se quiere dibujar almo más realista no estamos restringidos a un conjunto pequeño de colores, pero eso ayudará como diirectrices para otros colores. Siempre se puede usar una pintura base en los colores básicos y luego pintar más colores, sombreado e iluminación hasta que todo se vea hermoso.
 
+## Ahora el dibujo
 
+Ahora estamos preparados para ir y sumergirnos dentro de el dibujo. Sentémonos, encendamos el ordenador y abramos ASEprite. Lo primero que se ve es un entorno como el siguiente..
 
-If you want to draw something more realistic you are not restricted to a small set of colors, but they will help as guidelines for the other colors. You always can use a base paint in basic colors and then paint more colors, shadow and light over until everything look gorgeous.
+![](../img/aseprite1.png)
 
+Es realemente un entorno encantador una vez que se usa. Vamos a crear un nuevo fichero en aseprite y nos encontraremos un menú como este.
 
+![](../img/aseprite2.png)
 
-## Now the drawing thing
+Y quizás te preguntarás qué modo de color usar, o qué color de fondo. Para pixel art una gran herramienta (al menos para mí) es una paleta de color indexado. Estamos limitados a 256, sí, pero son más que suficientes. Lo bueno es que cuando queremos cambiar un color, o ajustar toda la paleta de colores para todos los sprites, sólo necesitaremos cambiar la paleta. No necesitaremos repintar nada (En teoría).
 
+Esto nos lleva a hacer paletas compartidas entre todas las imágenes. O quizás usar diferentes paletas para diferentes propósitos (como una paleta para un entorno corriente, y otra para un entorno frío donde todos los colores están teñidos de azul). Y esa será la primera cosa que haré.
 
-So, now we are ready to go and dive into the drawing thing. So we sit, turn on the computer, and open ASEprite. The first thing we see is an environment like this.
-
-
-![](img/aseprite1.png)
-
-
-Its actually a lovely environment once you get used. Then you go to create a new file in aseprite and find a menu like this one.
-
-
-![](img/aseprite2.png)
-
-
-And maybe you will ask yourself which color mode use, or which background color. For pixel art one great tool (at least for me) is an indexed color palette. You are limited to 256 colors, yes, but they are plenty enough. The gain is that when you want to change one color, or adjust all the palette colors over all the sprites, you will only need to change the palette. You do not need to repaint anything (theoretically).
-
-
-This leads you to make a palette shared between all the images. Or maybe to use different palettes for different purposes (like a palette for normal environments, and another for cold environments where all the colors are tinted in blue). And that will be the first thing we will do.
-
+---
 
 Actually creating a palette from scratch is a continuous process where you add colors when you need them, and that is fine. But here I will cheat and make a (I hope) complete palette from the twelve colors from the color wheel. Then tweak it to give everything the desired look and use it everywhere so the colors will be consistent over all the assets.
 
