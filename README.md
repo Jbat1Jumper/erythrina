@@ -16,4 +16,5 @@
 
 ## Translation
 
+* [Portuguese translation](./doc/pt/README.md)
 * [Spanish translation](./doc/es/README.md)
