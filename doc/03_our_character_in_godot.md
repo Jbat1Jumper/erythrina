@@ -8,7 +8,7 @@ First we have to create a folder for our project. Every resource, every script w
 
 Our resouces like animations will go there also but because I will reuse them for many games, and because the .ase is useless I will save it in the assets folder separated from the projects, and I'will only store with the projects the exported assets.
 
-So, we download Godot from the website - [link](http://www.godotengine.org/wp/download/) - place it somewhere nice, and then we open it to find this screen.
+So, we download Godot from the website - [link](http://www.godotengine.org/download/) - place it somewhere nice, and then we open it to find this screen.
 
 
 ![](img/3/godot01.png)
@@ -54,7 +54,7 @@ By instancing we mean to, create an object of the same characteristics that the 
 
 The last thing about scenes is that when you run your game, you are actually running a scene. 
 
-I think that this was a very short and uncomplete intro to Godot but it's enought for now, the rest will come out on the way. I you are impatient to learn more here is the - [link](https://github.com/okamstudio/godot/wiki) - for the Godot wiki.
+I think that this was a very short and uncomplete intro to Godot but it's enought for now, the rest will come out on the way. I you are impatient to learn more here is the - [link](https://docs.godotengine.org/) - for the Godot wiki.
 
 Now we will focus on our games and what we will do to have it working. 
 
